@@ -1,0 +1,8 @@
+[run]
+command = "python backend/run_server.py"
+
+[env]
+PYTHONPATH = "."
+
+[deployment]
+run = ["sh", "-c", "python backend/run_server.py"]
