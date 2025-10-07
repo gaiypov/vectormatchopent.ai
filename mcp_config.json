@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "pacific-ai-vector-matching": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "PINECONE_API_KEY": "${PINECONE_API_KEY}",
+        "PINECONE_ENVIRONMENT": "${PINECONE_ENVIRONMENT}",
+        "PINECONE_INDEX_NAME": "${PINECONE_INDEX_NAME}",
+        "API_HOST": "0.0.0.0",
+        "API_PORT": "8001",
+        "API_DEBUG": "True"
+      }
+    }
+  }
+}
